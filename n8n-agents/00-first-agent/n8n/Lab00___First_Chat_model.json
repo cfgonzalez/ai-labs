@@ -1,8 +1,10 @@
 {
-  "name": "01 - First Chat model",
+  "name": "Lab00 - First Chat model",
   "nodes": [
     {
       "parameters": {
+        "public": true,
+        "mode": "webhook",
         "options": {}
       },
       "type": "@n8n/n8n-nodes-langchain.chatTrigger",
@@ -102,7 +104,7 @@
   "settings": {
     "executionOrder": "v1"
   },
-  "versionId": "99927aa0-2d89-47b2-a9c1-82fed6eec51d",
+  "versionId": "38b63247-c8a9-41c5-83fc-e44709a33f6f",
   "meta": {
     "templateCredsSetupCompleted": true,
     "instanceId": "9cb2cbf88f907952ac405eb4ad5b8dcf9c138ae0317b50917e4e0fde14ee88eb"
