@@ -1,52 +1,51 @@
 {
-  "name": "00 - Primer agente chat",
+  "name": "01 - First Chat model",
   "nodes": [
     {
       "parameters": {
-        "public": true,
-        "mode": "webhook",
         "options": {}
       },
       "type": "@n8n/n8n-nodes-langchain.chatTrigger",
       "typeVersion": 1.1,
       "position": [
-        -720,
-        -180
+        -520,
+        -200
       ],
-      "id": "ca05620a-0433-4c3e-97ab-827ef742928f",
+      "id": "d8a2cb6e-8f35-4c5b-a618-e8ba843a4d4a",
       "name": "When chat message received",
-      "webhookId": "e4808945-3828-486c-a47b-b6056b91a8cd"
+      "webhookId": "8e7ebd71-061b-44a8-95f9-91e792b6a764"
     },
     {
       "parameters": {
         "options": {
-          "systemMessage": "You are a helpful assistant"
+          "systemMessage": "You are a helpful assistant that speak spanish"
         }
       },
       "type": "@n8n/n8n-nodes-langchain.agent",
       "typeVersion": 1.8,
       "position": [
-        -500,
-        -180
+        -300,
+        -200
       ],
-      "id": "22c9ae34-cf1d-48f6-abf5-dea7654d7f36",
+      "id": "341e110b-9d1a-45ab-bf89-808349f5154b",
       "name": "AI Agent"
     },
     {
       "parameters": {
+        "model": "gemma3:12b",
         "options": {}
       },
       "type": "@n8n/n8n-nodes-langchain.lmChatOllama",
       "typeVersion": 1,
       "position": [
-        -600,
+        -380,
         40
       ],
-      "id": "c2b208ee-68d0-4594-98a2-4b396d9c77b5",
+      "id": "3435ac93-4a01-446b-8b6b-68f16af3c6c9",
       "name": "Ollama Chat Model",
       "credentials": {
         "ollamaApi": {
-          "id": "kzG5r5XntrNNyufT",
+          "id": "BPoqnmnUognuQtnD",
           "name": "Ollama account"
         }
       }
@@ -56,10 +55,10 @@
       "type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
       "typeVersion": 1.3,
       "position": [
-        -480,
-        180
+        -200,
+        40
       ],
-      "id": "da2fa255-333b-49a4-ba4f-8e6fe570a303",
+      "id": "ffab4924-ed3f-4484-8171-cd5c5c1d3138",
       "name": "Simple Memory"
     }
   ],
@@ -103,11 +102,18 @@
   "settings": {
     "executionOrder": "v1"
   },
-  "versionId": "998eaa19-cce8-4b0e-9547-1fdf3cca1c9c",
+  "versionId": "99927aa0-2d89-47b2-a9c1-82fed6eec51d",
   "meta": {
     "templateCredsSetupCompleted": true,
-    "instanceId": "c98123cf2a679230ab32f896ef42b6cce8837d21af510d05007197ccd2c4d41c"
+    "instanceId": "9cb2cbf88f907952ac405eb4ad5b8dcf9c138ae0317b50917e4e0fde14ee88eb"
   },
-  "id": "Ha03inZHzvFSCzep",
-  "tags": []
+  "id": "1JIxln99RxzbE71e",
+  "tags": [
+    {
+      "name": "AI-Labs",
+      "id": "zfFxmR8wKKsUIaOj",
+      "createdAt": "2025-05-05T20:46:05.839Z",
+      "updatedAt": "2025-05-05T20:46:05.839Z"
+    }
+  ]
 }
