@@ -10,7 +10,7 @@ const App = () => {
 
 	useEffect(() => {
 		createChat({
-			webhookUrl: 'http://localhost:5678/webhook/e4808945-3828-486c-a47b-b6056b91a8cd/chat'
+			webhookUrl: 'http://localhost:5678/webhook/8e7ebd71-061b-44a8-95f9-91e792b6a764/chat'
 		});
 
     
